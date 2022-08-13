@@ -7,7 +7,7 @@
         "core-js": "^3.23.0",
         "postcss-loader": "^7.0.1",
         "regenerator-runtime": "^0.13.9",
-        "sass": "^1.54.3",
+        "sass": "^1.54.4",
         "sass-loader": "13.0.0",
         "webpack-notifier": "^1.15.0"
     },
@@ -20,7 +20,12 @@
         "build": "encore production --progress"
     },
     "dependencies": {
-        "@popperjs/core": "^2.11.5",
-        "bootstrap": "^5.2.0"
+        "@popperjs/core": "^2.11.6",
+        "aos": "^2.3.4",
+        "bootstrap": "^5.0.0-beta1",
+        "counter": "^0.1.1",
+        "custom": "^0.0.0",
+        "navbar": "^2.1.0",
+        "tiny-slider": "^2.9.4"
     }
 }
