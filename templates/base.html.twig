@@ -13,8 +13,49 @@
         {% block javascripts %}
             {{ encore_entry_script_tags('app') }}
         {% endblock %}
+        <style>
+            .card:hover{
+                box-shadow: 0px 15px 26px rgba(0, 0, 0, 0.50);
+                transition-duration: 0.7s;
+            }
+            .card {
+                animation-duration: 3s;
+                animation-name: slidein;
+            }
+
+            @keyframes slidein {
+                from {
+                    margin-left: 100%;
+                    width: 300%;
+                }
+
+                to {
+                    margin-left: 0%;
+                    width: 100%;
+                }
+            }
+
+            #post {
+                animation-duration: 2s;
+                animation-name: showup;
+            }
+
+            @keyframes showup {
+                from {
+                    margin-top: 100%;
+                }
+
+                to {
+                    margin-top: 0%;
+                    width: 100%;
+                }
+            }
+
+        </style>
     </head>
     <body>
+        {% include 'base/nav.html.twig' %}
         {% block body %}{% endblock %}
+        {% include 'base/footer.html.twig' %}
     </body>
 </html>
